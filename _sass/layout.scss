@@ -1,0 +1,25 @@
+// Containers and wraps
+
+.container {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 2rem;
+
+}
+
+// Lists
+
+.work, .nav {
+  list-style: none;
+  padding-bottom: 1rem;
+  li {
+    margin-bottom: 1em;
+  }
+}
+
+.nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
