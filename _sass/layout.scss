@@ -38,9 +38,9 @@
   padding-bottom: $spacer*2;
 }
 
-// .z-0, .z-1, .z-2 {
-//   position: relative;
-// }
+.space-bottom-x2 {
+  padding-bottom: $spacer*4;
+}
 
 .z-0 {
   z-index: 0;
