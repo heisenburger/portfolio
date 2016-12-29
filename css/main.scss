@@ -9,24 +9,26 @@ $base-font-family: -apple-system, BlinkMacSystemFont,
     "Fira Sans", "Droid Sans", "Helvetica Neue", 
     sans-serif;
 $base-font-size:   16px;
-$base-font-weight: 400;
+$base-font-weight: 500;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$serif:            "Adobe Caslon Pro","Athelas","Goudy Old Style","Californian FB", Georgia, serif;
-$display-sm:       "Questa", Georgia, serif;
+$reading:          "Adobe Caslon Pro","Athelas","Goudy Old Style","Californian FB", Georgia, serif;
+$serif:            "Questa", Georgia, serif;
+$sansserif:        "Questa Sans", "Franklin Gothic", Helvetica Neue, sans-serif;
 $display:          "QuestaGrande", Georgia, serif;
 
-$spacing-unit:     2rem;
-$spacer:           3.125rem;
+$spacer:     2rem;
 
 $text-color:       #2B2B2B;
 $background-color: #fdfdfd;
 $accent-color:     #a58e19;
+$pink-color:       #f1c9d4;
+$blue-color:       #c9eaf1;
 
 $bp-tablet:        768px;
 $bp-desktop:       1024px;
-$bp-desktopwide:   1440px;
+$bp-desktop-wide:   1440px;
 
 
 // mobile-first css; with media queries for tablet and desktop
@@ -40,5 +42,6 @@ $bp-desktopwide:   1440px;
 @import
   "base",
   "typography",
-  "layout"
+  "layout",
+  "animation"
 ;

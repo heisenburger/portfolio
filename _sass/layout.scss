@@ -1,12 +1,110 @@
+// Positioning
+
+.abs {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.float-left {
+  float: left;
+  padding-right: 3rem;
+}
+
+.float-right {
+  float: right;
+  padding-left: 3rem;
+}
+
+.push-top {
+  margin-top: 10vh;
+}
+
+.space-bottom {
+  padding-bottom: $spacer*2;
+}
+
+// .z-0, .z-1, .z-2 {
+//   position: relative;
+// }
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+// Sizing
+
+.fullwidth {
+  width: 100vw;
+}
+
+.img-aside {
+  width: 30vw;
+  height: auto;
+}
+
+.expand {
+  height: 100%;
+  width: 100%;
+}
+
 // Containers and wraps
 
 .container {
-  width: 100%;
-  position: absolute;
   left: 0;
-  bottom: 0;
   padding: 2rem;
+  @include query($bp-tablet){
+    padding: 10vh 10vw;
+  }
+}
 
+.measure {
+  max-width: 35em;
+}
+
+// Display
+
+.hide-overflow {
+  overflow: hidden;
+}
+
+// Rules
+
+.hr-accent {
+  border: 0.5rem solid $accent-color;
+  margin: 4rem 0 0;
+}
+
+.hr-pink {
+  border: 0.5rem solid $pink-color;
+  margin: 4rem 0 0;
+}
+
+.hr-blue {
+  border: 0.5rem solid $blue-color;
+  margin: 4rem 0 0;
 }
 
 // Lists
@@ -15,11 +113,28 @@
   list-style: none;
   padding-bottom: 1rem;
   li {
-    margin-bottom: 1em;
+    padding: 1em;
+    margin: -1em -1em 0em;
+    @include query($bp-desktop){
+      padding: 0.5em;
+      margin: -0.5em -0.5em 0;
+    }
   }
 }
 
 .nav li {
   display: inline-block;
   margin-right: 1rem;
+}
+
+// logo
+
+.logo {
+  // color: currentColor;
+  width: 4rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  @include query($bp-desktop){
+    width: 5rem;
+  }
 }

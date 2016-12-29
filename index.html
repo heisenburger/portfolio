@@ -3,12 +3,10 @@ layout: default
 ---
 
 <ul class="work">
-  <li>BNZ Locator</li>
-  <li>BNZ Website</li>
-  <li>HVNGRY Brand</li>
+  {% assign entries = site.posts %}
+  {% for entry in entries %}
+      <li><a class="l-nu _hover _focus" href="{{ entry.url }}">{{ entry.title }}</a></li>
+  {% endfor %}
 </ul>
 
-<ul class="nav">
-  <li>About</li>
-  <li>Contact</li>
-</ul>
+{% include nav.html %}
