@@ -1,9 +1,12 @@
 // Reading elements
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: normal;
-  line-height: 1.57em;
+  line-height: 1.7em;
+  @include query ($bp-tablet){
+    font-size: 1.3rem;
+  }
   @include query ($bp-desktop){
     font-size: 1.5rem;
   }
@@ -17,6 +20,16 @@ blockquote {
     margin-left: 2rem;
     padding: 1rem 0 1rem 2rem;
     border-left: 1rem solid lighten($accent-color,30%);
+  }
+}
+
+h2 {
+  font-weight: normal;
+  @include query($bp-desktop){
+    font-weight: 300;
+  }
+  @include query($bp-desktop){
+    font-weight: 200;
   }
 }
 
