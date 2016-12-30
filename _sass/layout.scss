@@ -64,7 +64,12 @@
   width: 100vw;
 }
 
-.img-aside {
+.width-main {
+  width: 60vw;
+  height: auto;
+}
+
+.width-aside {
   width: 30vw;
   height: auto;
 }
@@ -88,40 +93,53 @@
   max-width: 35em;
 }
 
+.scroll-x {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 2rem 2rem;
+  @include query($bp-tablet){
+    padding: 0 10vw 10vh;
+  }
+
+}
+
 // Display
 
 .hide-overflow {
   overflow: hidden;
 }
 
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
 // Rules
 
-.hr-accent {
-  border: 0.5rem solid $accent-color;
-  margin: 4rem 0 0;
+.border-accent {
+  border-color: $accent-color;
 }
 
-.hr-pink {
-  border: 0.5rem solid $pink-color;
-  margin: 4rem 0 0;
+.border-pink {
+  border-color: $pink-color;
 }
 
-.hr-blue {
-  border: 0.5rem solid $blue-color;
-  margin: 4rem 0 0;
+.border-blue {
+  border-color: $blue-color;
 }
 
 // Lists
 
 .work, .nav {
   list-style: none;
-  padding-bottom: 1rem;
+  padding: 0 0 1rem;
   li {
-    padding: 1em;
-    margin: -1em -1em 0em;
+    padding: 0.5em;
+    margin: -0.5em -0.5em 0em;
     @include query($bp-desktop){
-      padding: 0.5em;
-      margin: -0.5em -0.5em 0;
+      padding: 0.3em;
+      margin: -0.3em -0.3em 0;
     }
   }
 }

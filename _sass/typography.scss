@@ -1,7 +1,7 @@
 // Reading elements
 
-p {
-  font-size: 1.1rem;
+p, ul {
+  font-size: 1rem;
   font-weight: normal;
   line-height: 1.7em;
   @include query ($bp-tablet){
@@ -10,6 +10,10 @@ p {
   @include query ($bp-desktop){
     font-size: 1.5rem;
   }
+}
+
+ul {
+  padding-left: 2rem;
 }
 
 blockquote {
@@ -25,7 +29,7 @@ blockquote {
 
 h2 {
   font-weight: normal;
-  @include query($bp-desktop){
+  @include query($bp-tablet){
     font-weight: 300;
   }
   @include query($bp-desktop){
@@ -157,4 +161,10 @@ h2 {
       transition: 100ms;
     }
   }
+}
+
+// Lists
+
+.no-bullet {
+  list-style: none;
 }
