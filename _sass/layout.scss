@@ -67,8 +67,11 @@
 .width-main {
   width: 100vw;
   height: auto;
+  margin-right: 2rem;
+  vertical-align: top;
   @include query($bp-tablet){
     width: 60vw;
+    vertical-align: middle;
   }
 }
 
@@ -115,10 +118,9 @@
 
 .inline-block {
   display: inline-block;
-  vertical-align: top;
 }
 
-// Rules
+// Borders and rulers
 
 .border-accent {
   border-color: $accent-color;
@@ -130,6 +132,12 @@
 
 .border-blue {
   border-color: $blue-color;
+}
+
+.frame {
+  border-width: 0.5rem;
+  border-style: solid;
+  padding: 2rem;
 }
 
 // Lists
