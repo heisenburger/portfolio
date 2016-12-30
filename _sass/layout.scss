@@ -65,8 +65,11 @@
 }
 
 .width-main {
-  width: 60vw;
+  width: 100vw;
   height: auto;
+  @include query($bp-tablet){
+    width: 60vw;
+  }
 }
 
 .width-aside {

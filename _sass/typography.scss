@@ -13,7 +13,9 @@ p, ul {
 }
 
 ul {
-  padding-left: 2rem;
+  @include query($bp-desktop){
+    padding-left: 2rem;
+  }
 }
 
 blockquote {
